@@ -33,4 +33,11 @@ different methods being called on the arrays:
 Another way to pass a callback for .forEach() is to use arrow function syntax.
 groceries.forEach(groceryItem => console.log(groceryItem));
 
+syntax 1:
+[1, 2, 3, 4].forEach(function(element){
+  console.log(`Printing ${element} to the console!`)
+})
+
+syntax 2:
+groceries.forEach(groceryItem => console.log(groceryItem));
 */
