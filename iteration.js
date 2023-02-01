@@ -1,3 +1,4 @@
+//############# .forEach #############
 const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro', 'Klimt','Mucha','De Chirico'];
 
 artists.forEach(artist => {
@@ -20,6 +21,31 @@ const onlyNumbers = things.filter(thing => {
 
 console.log(onlyNumbers);
 
+// ############# .map #############
+const animals = [
+  "Hen",
+  "elephant",
+  "llama",
+  "leopard",
+  "ostrich",
+  "Whale",
+  "octopus",
+  "rabbit",
+  "lion",
+  "dog",
+];
+
+// Create the secretMessage array below
+const secretMessage = animals.map((animals) => animals[0]);
+
+console.log(secretMessage.join(""));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+const smallNumbers = bigNumbers.map((bigNumbers) => bigNumbers / 100);
+console.log(smallNumbers);
+
 // ############## principles ##############
 /*
 different methods being called on the arrays:
@@ -28,7 +54,7 @@ different methods being called on the arrays:
     .map()
     .filter()
 
-############# arrow fonction #############
+############# .forEach #############
 
 Another way to pass a callback for .forEach() is to use arrow function syntax.
 groceries.forEach(groceryItem => console.log(groceryItem));
@@ -40,4 +66,30 @@ syntax 1:
 
 syntax 2:
 groceries.forEach(groceryItem => console.log(groceryItem));
+
+############# .map #############
+const animals = [
+  "Hen",
+  "elephant",
+  "llama",
+  "leopard",
+  "ostrich",
+  "Whale",
+  "octopus",
+  "rabbit",
+  "lion",
+  "dog",
+];
+
+// Create the secretMessage array below
+const secretMessage = animals.map((animals) => animals[0]);
+
+console.log(secretMessage.join(""));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+const smallNumbers = bigNumbers.map((bigNumbers) => bigNumbers / 100);
+console.log(smallNumbers);
+
 */
