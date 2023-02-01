@@ -46,6 +46,20 @@ const bigNumbers = [100, 200, 300, 400, 500];
 const smallNumbers = bigNumbers.map((bigNumbers) => bigNumbers / 100);
 console.log(smallNumbers);
 
+
+// ############# .filter #############
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+const smallNumbers2 = randomNumbers.filter( number => number < 250)
+console.log(smallNumbers2)
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter( favoriteWords => favoriteWords.length > 7);
+
+
 // ############## principles ##############
 /*
 different methods being called on the arrays:
@@ -92,4 +106,26 @@ const bigNumbers = [100, 200, 300, 400, 500];
 const smallNumbers = bigNumbers.map((bigNumbers) => bigNumbers / 100);
 console.log(smallNumbers);
 
+############# .filter #############
+exemple and syntax
+const words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door'];
+
+const shortWords = words.filter(word => {
+  return word.length < 5;
+});
+console.log(words); // Output: ['chair', 'music', 'pillow', 'brick', 'pen', 'door'];
+console.log(shortWords); // Output: [ 'pen', 'door']
+
+syntax : const newMethod = objetToDefine.map(objetToDefine => { });
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+const smallNumbers = randomNumbers.filter( number => number < 250)
+console.log(smallNumbers)
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter( favoriteWords => favoriteWords.length > 7)
 */
