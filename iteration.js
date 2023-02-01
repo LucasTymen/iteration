@@ -1,4 +1,4 @@
-const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro', 'Klimt','Mucha',De Chirico];
+const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro', 'Klimt','Mucha','De Chirico'];
 
 artists.forEach(artist => {
   console.log(artist + ' is one of my favorite artists.');
@@ -19,3 +19,18 @@ const onlyNumbers = things.filter(thing => {
 });
 
 console.log(onlyNumbers);
+
+// ############## principles ##############
+/*
+different methods being called on the arrays:
+
+    .forEach()
+    .map()
+    .filter()
+
+############# arrow fonction #############
+
+Another way to pass a callback for .forEach() is to use arrow function syntax.
+groceries.forEach(groceryItem => console.log(groceryItem));
+
+*/
