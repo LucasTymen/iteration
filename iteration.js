@@ -221,7 +221,8 @@ const lessThanTen = jumbledNums.findIndex(num => {
   console.log(lessThanTen); // Output: 3
   console.log(jumbledNums[3]); // Output: 5
 
-// If there isn’t a single element in the array that satisfies the condition in the callback, then .findIndex() will return -1.
+// If there isn’t a single element in the array that satisfies the condition in
+the callback, then .findIndex() will return -1.
   const greaterThan1000 = jumbledNums.findIndex(num =>{
     return num > 1000;
   });
@@ -229,10 +230,38 @@ const lessThanTen = jumbledNums.findIndex(num => {
 
 
 // ############# The .reduce() Method #############
-Fonctionne une fois par item, votre valeur de retour devient l’accumulation des itérations precedantes à l’itération suivante. L’accumulateur commence à 0 par défaut mais vous pouvez le changer avec un 2e arg optionnel.
+Fonctionne une fois par item, votre valeur de retour devient l’accumulation des
+itérations precedantes à l’itération suivante. L’accumulateur commence à 0 par
+défaut mais vous pouvez le changer avec un 2e arg optionnel.
 
 console.log([1, 2, 3].reduce((a, val) => a + val))
 
 // Résultat : 6
 // Explication : 1 + 2 + 3 = 6
+
+// ################### REVIEW ######################
+
+    .forEach() is used to execute the same code on every element in an array but
+    does not change the array and returns undefined.
+
+    .map() executes the same code on every element in an array and returns a
+    new array with the updated elements.
+
+    .filter() checks every element in an array to see if it meets certain
+    criteria and returns a new array with the elements that return truthy for
+    the criteria.
+
+    .findIndex() returns the index of the first element of an array that
+    satisfies a condition in the callback function. It returns -1 if none of
+    the elements in the array satisfies the condition.
+
+    .reduce() iterates through an array and takes the values of the elements
+    and returns a single value.
+
+    All iterator methods take a callback function, which can be a pre-defined
+    function, a function expression, or an arrow function.
+
+    You can visit the Mozilla Developer Network to learn more about iterator
+    methods (and all other parts of JavaScript!).
+
   */
