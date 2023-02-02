@@ -59,6 +59,31 @@ const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'
 // Call .filter() on favoriteWords below
 const longFavoriteWords = favoriteWords.filter( favoriteWords => favoriteWords.length > 7);
 
+// ############# The .findIndex() Method #############
+const animals2 = [
+  "hippo", "tiger", "lion", "seal", "cheetah", "monkey", "salamander", "elephant",
+];
+
+const foundAnimal2 = animals2.findIndex((animal2) => {
+  return animal2 === "elephant";
+});
+
+console.log(`${foundAnimal2} is the index for the elephant`);
+
+const startsWithS = animals2.findIndex((animal2) => {
+  return animal2[0] === "s" ? true : false;
+});
+const startsWithS2 = animals2.findIndex((animals2) => {
+  animals2.charAt(0);
+
+  if (animals2.charAt(0) === "s") {
+    console.log(`${animals2} starts with a "S"`);
+  }
+});
+
+console.log(startsWithS);
+console.log(startsWithS2);
+
 
 // ############## principles ##############
 /*
@@ -128,4 +153,19 @@ const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'
 
 // Call .filter() on favoriteWords below
 const longFavoriteWords = favoriteWords.filter( favoriteWords => favoriteWords.length > 7)
-*/
+
+
+############# The .findIndex() Method #############
+exemple & syntax :
+const jumbledNums = [123, 25, 78, 5, 9];
+const lessThanTen = jumbledNums.findIndex(num => {
+  return num < 10;
+  });
+  console.log(lessThanTen); // Output: 3
+  console.log(jumbledNums[3]); // Output: 5
+
+// If there isn’t a single element in the array that satisfies the condition in the callback, then .findIndex() will return -1.
+  const greaterThan1000 = jumbledNums.findIndex(num =>{
+    return num > 1000;
+  });
+  console.log(greaterThan1000); */
