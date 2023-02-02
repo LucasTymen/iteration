@@ -84,6 +84,16 @@ const startsWithS2 = animals2.findIndex((animals2) => {
 console.log(startsWithS);
 console.log(startsWithS2);
 
+// ############# The .reduce() Method #############
+const newNumbers = [1, 3, 5, 7];
+
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ', accumulator);
+  console.log('The value of currentValue: ', currentValue);
+  return accumulator + currentValue;
+},10);
+console.log(newSum)
+
 
 // ############## principles ##############
 /*
@@ -168,4 +178,14 @@ const lessThanTen = jumbledNums.findIndex(num => {
   const greaterThan1000 = jumbledNums.findIndex(num =>{
     return num > 1000;
   });
-  console.log(greaterThan1000); */
+  console.log(greaterThan1000);
+
+
+// ############# The .reduce() Method #############
+Fonctionne une fois par item, votre valeur de retour devient l’accumulation des itérations precedantes à l’itération suivante. L’accumulateur commence à 0 par défaut mais vous pouvez le changer avec un 2e arg optionnel.
+
+console.log([1, 2, 3].reduce((a, val) => a + val))
+
+// Résultat : 6
+// Explication : 1 + 2 + 3 = 6
+  */
